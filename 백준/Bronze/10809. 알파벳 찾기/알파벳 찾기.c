@@ -23,7 +23,6 @@ int main(void)
 		{
 			count++;
 		}
-		continue;
 	}
 
 	for (int i = 0; i < sizeof(value) / sizeof(int); i++) printf("%d ",*(value + i));
