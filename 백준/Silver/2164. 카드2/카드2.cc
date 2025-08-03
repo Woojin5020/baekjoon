@@ -5,7 +5,7 @@ using namespace std;
 int main(void)
 {
 	queue<int> a;
-	int b,i,c;
+	int b,i;
 	cin >> b;
 	for (i = 1; i <= b; i++)
 	{
@@ -14,9 +14,8 @@ int main(void)
 	while (a.size() != 1)
 	{
 		a.pop();
-		c = a.front();
+		a.push(a.front());
 		a.pop();
-		a.push(c);
 	}
 	cout << a.front();
 }
